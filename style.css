@@ -84,9 +84,13 @@ body * {
   border: 1px solid black;
   border-radius: 50%;
   z-index: 1;
+  transition: background 1s;
 }
 
 #switch button:hover{
+  margin-bottom: 7%;
+  width: 30px;
+  height: 30px;
   background: rgb(214, 147, 3) var(--switch-bg-url) no-repeat center;
   transition: background 1s;
 }
@@ -99,19 +103,15 @@ body * {
   border: 1px solid black;
   border-radius: 50%;
   z-index: 1;
-}
-
-#switchDark button:hover{
-  background: rgb(54, 18, 214) var(--switch-bg-url-dark) no-repeat center;
   transition: background 1s;
 }
 
-.light #switch button{
-  transition: all 0.8s;
-}
-
-.dark #switchDark button{
-  transition: all 0.8s;
+#switchDark button:hover{
+  margin-bottom: 7%;
+  width: 30px;
+  height: 30px;
+  background: rgb(0, 89, 255) var(--switch-bg-url-dark) no-repeat center;
+  transition: background 1s;
 }
 
 span{
@@ -126,10 +126,6 @@ span{
   position: absolute;
   bottom: 95.34%;
   right: 1%;
-}
-
-span:hover{
-    background: var(--highlight-color);
 }
 
 /* links da lista */
